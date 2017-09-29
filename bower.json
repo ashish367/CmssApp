@@ -1,0 +1,25 @@
+{
+  "name": "cmssApp",
+  "version": "1.0.0",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular-route": "~1.5.3",
+    "angular-material": "~1.0.0",
+    "moment": "~2.10.6",
+    "angular": "~1.5.3",
+    "angular-animate": "~1.5.3",
+    "angular-aria": "~1.5.3",
+    "angular-messages": "~1.5.3",
+    "components-font-awesome": "^4.7.0",
+    "angular-toastr": "^2.1.1",
+    "ang-accordion": "*",
+    "angular-material-data-table": "^0.10.10"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.5.3"
+  },
+  "resolutions": {
+    "angular": "~1.5.3"
+  },
+  "overrides": {}
+}

@@ -1,0 +1,53 @@
+.cmss-button-color {
+    background-color: #970001 !important;
+    color: #fff !important;
+}
+
+.cmss-text-center {
+    text-align: center;
+}
+
+.toast {
+    background-color: red !important;
+    color: white !important;
+}
+
+* {
+    outline: none !important;
+}
+
+.md-toast-success .md-toast-content {
+    background-color: #3fb541 !important;
+}
+
+.md-toast-error .md-toast-content {
+    background-color: #822424 !important;
+    color: rgb(250, 250, 250) !important;
+}
+
+.success {
+    background-color: #3fb541 !important;
+}
+
+.error {
+    background-color: #970001 !important;
+}
+
+.fullHeight {
+    height: 100%;
+}
+
+.fabDownBtb {
+    background-color: #970001 !important;
+}
+
+.fab-align {
+    position: fixed;
+    right: 5%;
+    margin-top: -78%;
+}
+
+.fabButton {
+    font-size: 24px;
+    vertical-align: middle;
+}

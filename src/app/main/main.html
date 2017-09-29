@@ -1,0 +1,31 @@
+<md-card>
+  <md-card-content>
+    <div>
+      <form ng-submit="vm.validate();">
+        <div layout="row" flex>
+          <div flex="10"></div>
+          <div flex="80">
+            <md-input-container class="md-block" flex-gt-sm>
+              <label>Enter Employee Id</label>
+              <input type="number" class="cmss-input-border" ng-model="vm.employeeId">
+            </md-input-container>
+          </div>
+          <div flex="10"></div>
+
+        </div>
+        <div class="cmss-text-center" ng-click="vm.validate();">
+          <md-button class="cmss-button-color">Login</md-button>
+        </div>
+      </form>
+    </div>
+  </md-card-content>
+</md-card>
+<style>
+  .cmss-input-border {
+    border: 1px solid #970001 !important;
+  }
+  
+  label {
+    color: #000 !important;
+  }
+</style>

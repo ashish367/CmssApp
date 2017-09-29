@@ -1,0 +1,32 @@
+<md-card>
+  <md-card-content>
+    <md-list flex style="margin-bottom: 7%;">
+      <md-list-item class="md-2-line" ng-repeat="item in vm.clientList track by $index">
+        <img src="assets/images/angular.png" class="md-avatar" />
+        <div class="md-list-item-text" layout="column">
+          <h3>{{ item.client_name }}</h3>
+          <h4>{{ item.client_department }}</h4>
+        </div>
+        <div id="icon">
+          <md-button class="md-secondary md-icon-button" ng-click="doSecondaryAction($event)" aria-label="action Button">
+            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+          </md-button>
+        </div>
+        <md-divider ng-if="!$last"></md-divider>
+      </md-list-item>
+    </md-list>
+    <div class="fab-align">
+      <md-button class="md-fab fabButton fabDownBtb" aria-label="Add Client">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+      </md-button>
+    </div>
+  </md-card-content>
+</md-card>
+
+<style>
+  
+  
+  md-card md-card-content {
+    padding: 8px !important;
+  }
+</style>
