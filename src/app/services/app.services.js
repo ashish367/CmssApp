@@ -12,7 +12,8 @@
             "historyBack": historyBack,
             "getClientDetails": getClientDetails,
             "validateLogin": validateLogin,
-            "getApplicationDetails": getApplicationDetails
+            "getApplicationDetails": getApplicationDetails,
+            "selectedItem": ""
         }
         return collections;
 
@@ -37,7 +38,7 @@
             var params = {
                 method: jsonInput.method,
                 url: appSetting.baseUrl + jsonInput.service,
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                headers: { "Content-Type": "application/json" },
                 data: jsonInput.data
             }
             console.log("sevice Params", angular.toJson(params));
@@ -54,7 +55,7 @@
             var params = {
                 method: jsonInput.method,
                 url: appSetting.baseUrl + jsonInput.service,
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded,application/json' }
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
             }
             $http(params).then(function (success) {
                 defer.resolve(success);

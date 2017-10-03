@@ -6,9 +6,11 @@
     .config(config);
 
   /** @ngInject */
-  function config($logProvider, toastrConfig) {
+  function config($logProvider, toastrConfig, $httpProvider) {
     // Enable log
     $logProvider.debugEnabled(true);
+    // $httpProvider.defaults.headers.post = {};
+
     angular.extend(toastrConfig, {
       autoDismiss: false,
       containerId: 'toast-container',

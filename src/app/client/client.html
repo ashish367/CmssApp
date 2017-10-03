@@ -1,6 +1,7 @@
 <md-card>
   <md-card-content>
-    <md-list flex style="margin-bottom: 7%;">
+    {{vm.clientList.length}}
+    <md-list flex style="margin-bottom: 8%;">
       <md-list-item class="md-2-line" ng-repeat="item in vm.clientList track by $index">
         <img src="assets/images/angular.png" class="md-avatar" />
         <div class="md-list-item-text" layout="column">
@@ -8,7 +9,7 @@
           <h4>{{ item.client_department }}</h4>
         </div>
         <div id="icon">
-          <md-button class="md-secondary md-icon-button" ng-click="doSecondaryAction($event)" aria-label="action Button">
+          <md-button class="md-secondary md-icon-button" aria-label="action Button" ng-click="vm.showBottomSheet(item)">
             <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
           </md-button>
         </div>
@@ -24,8 +25,6 @@
 </md-card>
 
 <style>
-  
-  
   md-card md-card-content {
     padding: 8px !important;
   }

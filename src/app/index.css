@@ -44,10 +44,20 @@
 .fab-align {
     position: fixed;
     right: 5%;
-    margin-top: -78%;
+    /*margin-top: -78%;*/
+        margin-top: -15%;
+
 }
 
 .fabButton {
     font-size: 24px;
     vertical-align: middle;
+}
+
+md-bottom-sheet.md-list.md-has-header.ng-scope {
+    padding: 2px !important;
+}
+
+.cmssButton {
+    background-color: #970001 !important;
 }
